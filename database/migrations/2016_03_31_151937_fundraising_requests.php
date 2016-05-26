@@ -15,7 +15,7 @@ class FundraisingRequests extends Migration
         //
         Schema::create('fundraising_requests', function (Blueprint $table) {
             $table->increments('id');
-            $table->bigInteger('oranization_id');
+            $table->bigInteger('organization_id');
             $table->string('project_name',100);
             $table->string('project_description',400);
             $table->string('project_location',100);
